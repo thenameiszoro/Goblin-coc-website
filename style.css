@@ -1,0 +1,382 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+.desktop-nav-bar {
+  display: none;
+}
+.mobile-header {
+  min-width: 100dvw;
+}
+.mobile-nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-nav-bar1 {
+  display: flex;
+  color: antiquewhite;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mobile-nav-bar :hover {
+  color: rgb(60, 255, 0);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.ri-menu-line {
+  color: azure;
+  font-size: 32px;
+  cursor: pointer;
+  display: flex;
+}
+
+.button {
+  background-color: rgba(240, 248, 255, 0.103);
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  border: none;
+}
+
+.mobile-nav-bar2 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background: #4d9553;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.55s ease;
+}
+
+.mobile-nav-bar2 a {
+  color: antiquewhite;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.mobile-nav-bar2 :hover {
+  color: rgb(60, 255, 0);
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.background {
+  background: linear-gradient(
+    245.59deg,
+    #4d9559 0%,
+    #38703d 28.53%,
+    #133917 75.52%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100dvh;
+  display: grid;
+  min-width: 100vw;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+.content {
+  width: 100%;
+  color: antiquewhite;
+  text-align: center;
+}
+.content h1,
+.content h2,
+.content h3,
+.content p {
+  margin: 0.5rem 0;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.buttons a {
+  color: white;
+  background: #4d9559;
+  border: 1px solid transparent;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.buttons a:hover {
+  background: transparent;
+  transform: translateX(8px);
+}
+
+.buttons a {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.buttons a i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.line-clamp {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  width: 6rem;
+  text-wrap: none;
+}
+.content h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 2rem;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+.social {
+  display: none;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.social-footer-content i {
+  color: rgb(244, 255, 240);
+  font-size: 1.5rem;
+}
+
+.social-footer-content a {
+  text-decoration: none;
+}
+.social-footer-content i:hover {
+  color: rgb(60, 255, 0);
+  transition: 0.3s;
+}
+@media (min-width: 640px) {
+}
+@media screen and (min-width: 768px) {
+  .ri-menu-line,
+  .social-footer,
+  .mobile-nav-bar1,
+  .mobile-nav-bar2,
+  .line-clamp,
+  .button {
+    display: none;
+  }
+  .desktop-nav-bar {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+  }
+
+  .desktop-nav-bar1 {
+    color: antiquewhite;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .desktop-nav-bar :hover {
+    color: rgb(60, 255, 0);
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+
+  .desktop-nav-bar2 {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .desktop-nav-bar2 a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  .desktop-nav-bar2 :hover {
+    color: rgb(60, 255, 0);
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+  .middle {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    width: 45%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .buttons a {
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 0.8rem 1.5rem;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.55s ease;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+
+  .buttons a:hover {
+    background: transparent;
+    transform: translateX(8px);
+  }
+
+  .buttons a.ctaa {
+    background: transparent;
+    border: 1px solid white;
+  }
+
+  .buttons a.ctaa i {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .content h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    width: 45%;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 1rem;
+  }
+
+  .social i {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .desktop-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 5rem;
+  }
+  .content {
+    width: 40%;
+    margin-left: 10%;
+  }
+  .content h1 {
+    font-size: 4rem;
+  }
+  .content a {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+  .image {
+    width: 50%;
+    padding-top: 0;
+  }
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .social {
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktop-nav-bar {
+    padding: 1rem 8rem;
+    gap: 20rem;
+  }
+  .desktop-nav-bar1 {
+    font-size: 2rem;
+  }
+  .desktop-nav-bar2 {
+    gap: 2rem;
+    font-size: 1rem;
+  }
+  .content {
+    width: 50%;
+    margin-left: 10%;
+  }
+  .content h1 {
+    font-size: 5rem;
+  }
+  .content a {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+  .image {
+    width: 40%;
+  }
+  .social i {
+    font-size: 2.5rem;
+  }
+}
